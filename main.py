@@ -7,6 +7,7 @@ st.title('YouTube Video Downloader')
 # Input for YouTube URL
 video_url = st.text_input('Enter the YouTube video URL')
 
+
 # Function to download video
 def download_video(url):
     try:
@@ -16,6 +17,7 @@ def download_video(url):
         return True, f"Video downloaded successfully: {stream.title}"
     except Exception as e:
         return False, f"Error downloading video: {str(e)}"
+
 
 # Button to download video
 if st.button('Download Video'):
